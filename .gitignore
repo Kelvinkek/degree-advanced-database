@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Reports / documents (not for public repo)
+*.docx
+*.doc
+*.pdf
+
+# Database backups / dumps
+*.bak
+*.dmp
+*.dump
+
+# Logs
+*.log
