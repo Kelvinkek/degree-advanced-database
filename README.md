@@ -32,9 +32,9 @@ It demonstrates advanced PL/SQL features:
 
 ```
 .
-├── ADM_DDL.txt              # Schema (CREATE TABLE statements for all 18 tables)
-├── ADM_DML.txt              # Sample data inserts
-├── run_sequence.txt         # Auto-generates sequences synced with existing max IDs
+├── ADM_DDL.sql              # Schema (CREATE TABLE statements for all 18 tables)
+├── ADM_DML.sql              # Sample data inserts
+├── run_sequence.sql         # Auto-generates sequences synced with existing max IDs
 ├── code/                    # Procedures, triggers, queries, reports
 ├── .gitignore
 └── README.md
@@ -56,17 +56,17 @@ This project targets **Oracle Database** (use SQL Developer, SQL*Plus, or any Or
 
 1. **Build the schema**:
    ```sql
-   @ADM_DDL.txt
+   @ADM_DDL.sql
    ```
 2. **Load sample data**:
    ```sql
-   @ADM_DML.txt
+   @ADM_DML.sql
    ```
 3. **Set up sequences** (auto-syncs `START WITH` to existing max IDs):
    ```sql
-   @run_sequence.txt
+   @run_sequence.sql
    ```
-4. **Install database objects** — execute the `.sql` / `.txt` files inside each member's folder under `code/` to create their procedures, triggers, and reports.
+4. **Install database objects** — execute the `.sql` files inside `code/` to create the procedures, triggers, queries, and reports.
 5. **Run reports / queries** — execute any individual report or query script.
 
 ## Tech Stack
